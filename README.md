@@ -2,7 +2,7 @@
 Membuat Design Database
 
 # DESIGN DATABASE KELOMPOK 2:
-![image](https://user-images.githubusercontent.com/79674049/193468462-9033395f-c88a-402b-b8f4-43b2c7e4055b.png)
+![Kelompok2](https://user-images.githubusercontent.com/92875199/194766152-976df2b1-81aa-4518-a914-1d466f0d2f47.jpeg)
 
 KETUA:
 1. Zabil Sabri Muhammad
@@ -15,3 +15,4 @@ Nama Anggota:
 5. MICHIKO TJIANG
 6. ASTRINA WULAN PUTRI
 7. MUH. SALIM MAULANA
+
