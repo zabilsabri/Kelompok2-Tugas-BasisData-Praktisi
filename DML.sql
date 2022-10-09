@@ -1,3 +1,8 @@
+INSERT INTO `course` (`course_name`, `duration`) VALUES
+('Sistem Basis Data', 120),
+('Pemrograman Web', 120),
+('Struktur Diskrit', 120);
+
 -- 1
 INSERT INTO student_info (full_name, address, Major) VALUES ('Emilia Damayanto', 'Jln. Sahabat', 'Teknik');
 
