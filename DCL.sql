@@ -1,5 +1,3 @@
-USE contract_sisfo;
-
 # Buat user baru
 CREATE USER 'DosenSisfo'@'localhost' IDENTIFIED BY 'dosensisfo.id';
 
