@@ -1,3 +1,8 @@
+INSERT INTO `student_info` (`full_name`, `address`, `major`) VALUES
+('Zabil Sabri Muhammad', 'Jln. Dg. Tata Kompleks Hartaco Indah', 'Sisfor'),
+('Salim Maulana', 'Jln. Perintis Kemerdekaan', 'Sisfor'),
+('Reza Hasan', 'Jln. Urip Sumoharjo', 'Sisfor');
+
 INSERT INTO `course` (`course_name`, `duration`) VALUES
 ('Sistem Basis Data', 120),
 ('Pemrograman Web', 120),
