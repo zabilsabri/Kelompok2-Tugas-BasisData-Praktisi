@@ -8,7 +8,7 @@ INSERT INTO `course` (`name`, `duration`, `time`) VALUES
 ('Pemrograman Web', 120, '07:30:00'),
 ('Struktur Diskrit', 120, '10:10:00');
 
-INSERT INTO `schedule` (`id`, `course_id`, `date`) VALUES
+INSERT INTO `schedule` (`student_id`, `course_id`, `date`) VALUES
 (1, 1, '2022-10-10'),
 (2, 3, '2022-10-11'),
 (3, 2, '2022-10-12'),
@@ -24,17 +24,17 @@ SELECT * FROM student_info;
 UPDATE student_info SET full_name = 'Emilia Damayanti', Address = 'Jln. Kumala', Major= 'Sisfor' WHERE id = 4;
 
 -- 4 List of schedule on specific student
-SELECT `schedule`.id, course.`name`, `schedule`.`date`, course.`time` FROM course
+SELECT `schedule`.student_id, course.`name`, `schedule`.`date`, course.`time` FROM course
 INNER JOIN `schedule`
 ON course.course_id = `schedule`.course_id
-WHERE `schedule`.id = 3;
+WHERE `schedule`.student_id = 3;
 
 -- 5 List of courses
 SELECT course_id, `name`, duration FROM course;
 
 -- 6 Create / input new schedule for specific student
-INSERT INTO `schedule` (id, course_id, `date`) VALUES 
+INSERT INTO `schedule` (student_id, course_id, `date`) VALUES 
 (4, 3, '2022-10-11');
 
 -- 7 Edit /update schedule for specific student
-UPDATE `schedule` SET course_id = 2, `date`='2022-10-12' WHERE id = 4;
+UPDATE `schedule` SET course_id = 2, `date`='2022-10-12' WHERE student_id = 4;
