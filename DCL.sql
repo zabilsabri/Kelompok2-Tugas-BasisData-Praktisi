@@ -10,6 +10,6 @@ TO 'DosenSisfo'@'localhost';
 SHOW GRANTS FOR 'DosenSisfo'@'localhost';
 
 # Hapus hak akses user
-REVOKE CREATE, DROP 
+REVOKE CREATE, DROP, ALTER 
 ON contract_sisfo
 FROM 'DosenSisfo'@'localhost';
