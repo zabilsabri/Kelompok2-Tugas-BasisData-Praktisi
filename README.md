@@ -2,7 +2,7 @@
 Membuat Design Database
 
 # DESIGN DATABASE KELOMPOK 2:
-![image](https://user-images.githubusercontent.com/79674049/194837752-a38b94eb-bf62-4bd6-a56f-e0258f9b9883.png)
+![image](https://user-images.githubusercontent.com/79674049/194902963-962be449-4ee2-41c8-9130-da3a1ee20d8e.png)
 
 KETUA:
 1. Zabil Sabri Muhammad
@@ -47,10 +47,10 @@ Hasil:
 
 Query:
 
-`` SELECT `schedule`.id, course.`name`, `schedule`.`date`, course.`time` FROM course
+`` SELECT `schedule`.student_id, course.`name`, `schedule`.`date`, course.`time` FROM course
 INNER JOIN `schedule`
 ON course.course_id = `schedule`.course_id
-WHERE `schedule`.id = 3; ``
+WHERE `schedule`.student_id = 3; ``
 
 Hasil:
 
@@ -70,18 +70,18 @@ Hasil:
 
 Query:
 
-`` INSERT INTO `schedule` (id, course_id, `date`) VALUES (4, 3, '2022-10-11'); ``
+`` INSERT INTO `schedule` (student_id, course_id, `date`) VALUES (4, 3, '2022-10-11'); ``
 
 Hasil:
 
-![image](https://user-images.githubusercontent.com/79674049/194838807-6d318070-1d78-44ce-8859-d54fa9302c5c.png)
+![image](https://user-images.githubusercontent.com/79674049/194903848-6f4a2233-bea2-4f21-9311-92d7f01eb352.png)
 
 7. Edit /update schedule for specific student
 
 Query:
 
-``UPDATE `schedule` SET course_id = 2, `date`='2022-10-12', `time`='07:30:00' WHERE id = 4; ``
+``UPDATE `schedule` SET course_id = 2, `date`='2022-10-12', `time`='07:30:00' WHERE student_id = 4; ``
 
 Hasil:
 
-![image](https://user-images.githubusercontent.com/79674049/194838918-bac02951-68b0-4d9d-9443-a1c7b749fc4f.png)
+![image](https://user-images.githubusercontent.com/79674049/194903936-6afe2185-4c8e-4f74-a275-b882275dae7c.png)
