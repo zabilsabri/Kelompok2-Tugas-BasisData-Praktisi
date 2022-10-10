@@ -2,7 +2,7 @@
 Membuat Design Database
 
 # DESIGN DATABASE KELOMPOK 2:
-![image](https://user-images.githubusercontent.com/79674049/194793279-ce9313cb-cf18-4801-94e4-29fbe1d96ad4.png)
+![image](https://user-images.githubusercontent.com/79674049/194837752-a38b94eb-bf62-4bd6-a56f-e0258f9b9883.png)
 
 KETUA:
 1. Zabil Sabri Muhammad
@@ -47,43 +47,41 @@ Hasil:
 
 Query:
 
-`` SELECT student_info.id, course.course_name, `schedule`.`date`, `schedule`.`time` from student_info 
-INNER JOIN `schedule` 
-ON student_info.id = `schedule`.id
-INNER join course
-ON `schedule`.course_id = course.course_id
+`` SELECT `schedule`.id, course.`name`, `schedule`.`date`, course.`time` FROM course
+INNER JOIN `schedule`
+ON course.course_id = `schedule`.course_id
 WHERE `schedule`.id = 3; ``
 
 Hasil:
 
-![image](https://user-images.githubusercontent.com/79674049/194795711-de833bd4-8135-40fd-ba7d-06d50f54633d.png)
+![image](https://user-images.githubusercontent.com/79674049/194837938-dc90d7b5-a3a8-45b6-ad4e-3f0da5b1c33f.png)
 
 5. List of courses
 
 Query:
 
-` SELECT course_id, course_name, duration FROM course; `
+`` SELECT * FROM course; ``
 
 Hasil:
 
-![image](https://user-images.githubusercontent.com/79674049/194795832-d32a5110-fde6-4498-b2f2-b3ec92bbfc41.png)
+![image](https://user-images.githubusercontent.com/79674049/194838441-8690a364-a427-46c8-a975-81a455288bc8.png)
 
 6. Create / input new schedule for specific student
 
 Query:
 
-`` INSERT INTO `schedule` (id, course_id, `date`, `time`) VALUES (4, 3, '2022-10-11', '07:30:00'); ``
+`` INSERT INTO `schedule` (id, course_id, `date`) VALUES (4, 3, '2022-10-11'); ``
 
 Hasil:
 
-![image](https://user-images.githubusercontent.com/79674049/194799501-8526aeb2-c1b4-4568-8bab-ed82d14b3d39.png)
+![image](https://user-images.githubusercontent.com/79674049/194838807-6d318070-1d78-44ce-8859-d54fa9302c5c.png)
 
 7. Edit /update schedule for specific student
 
 Query:
 
-``UPDATE `schedule` SET course_id = 2, `date`='2022-10-12', `time`='07:30:00' WHERE id = 4;``
+``UPDATE `schedule` SET course_id = 2, `date`='2022-10-12', `time`='07:30:00' WHERE id = 4; ``
 
 Hasil:
 
-![image](https://user-images.githubusercontent.com/79674049/194799599-7747444e-a301-45b0-89f3-0ef0309da04e.png)
+![image](https://user-images.githubusercontent.com/79674049/194838918-bac02951-68b0-4d9d-9443-a1c7b749fc4f.png)
