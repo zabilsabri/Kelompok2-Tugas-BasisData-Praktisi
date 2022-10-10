@@ -17,9 +17,9 @@ SHOW GRANTS FOR 'DosenSisfo'@'localhost';
 # Hapus hak akses user
 REVOKE CREATE, DROP 
 ON contract_sisfo
-TO 'DosenSisfo'@'localhost';
+FROM 'DosenSisfo'@'localhost';
 
 # Hapus akses tertentu (misal akses DROP) kepada semua user
 REVOKE DROP  
 ON contract_sisfo
-TO '*'@'localhost';
+FROM '*'@'localhost';
