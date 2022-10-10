@@ -20,11 +20,11 @@ CREATE TABLE course(
 
 CREATE TABLE `schedule` (
 	`schedule_id` INT AUTO_INCREMENT,
-	id INT,
+	student_id INT,
 	course_id INT,
 	`date` DATE,
 	`time` DATETIME DEFAULT CURRENT_TIMESTAMP,
-	FOREIGN KEY (id) REFERENCES student_info(id),
+	FOREIGN KEY (student_id) REFERENCES student_info(id),
 	FOREIGN KEY (course_id) REFERENCES course(course_id),
 	PRIMARY KEY (`schedule_id`)
 );
