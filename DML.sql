@@ -8,6 +8,12 @@ INSERT INTO `course` (`course_name`, `duration`) VALUES
 ('Pemrograman Web', 120),
 ('Struktur Diskrit', 120);
 
+INSERT INTO `schedule` (`id`, `course_id`, `date`, `time`) VALUES
+(1, 1, '2022-10-10', '10:10:00'),
+(2, 3, '2022-10-11', '07:30:00'),
+(3, 2, '2022-10-12', '07:30:00'),
+(3, 1, '2022-10-10', '10:10:00');
+
 -- 1 Create new student info record
 INSERT INTO student_info (full_name, address, Major) VALUES ('Emilia Samayanti', 'Jln. Sahabat', 'Teknik');
 
